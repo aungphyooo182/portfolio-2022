@@ -1,0 +1,72 @@
+@media screen and (max-width: 1024px) {
+  .logo {
+    z-index: 10;
+  }
+  .portfolio-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+  }
+  .about-image {
+    transform: scale(0.8);
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ham {
+    display: flex;
+  }
+
+  .my-nav-links {
+    display: none;
+  }
+
+  .shape {
+    width: 150px;
+  }
+
+  .logo {
+    z-index: 10;
+  }
+
+  #work h1 {
+    font-size: 2rem;
+  }
+
+  .about-image {
+    transform: scale(0.5);
+    object-fit: cover;
+    width: 100%;
+  }
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 32px;
+  }
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 32px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .shape {
+    display: none;
+  }
+  .shape-area {
+    display: none;
+  }
+  .about-image {
+    transform: scale(1);
+    object-fit: cover;
+    width: 100%;
+  }
+  .service-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 32px;
+  }
+  .portfolio-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 32px;
+  }
+}

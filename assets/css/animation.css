@@ -1,0 +1,131 @@
+.shape-hero {
+  position: absolute;
+}
+
+.shape1,
+.shape2,
+.shape3,
+.shape4,
+.shape5,
+.shape6,
+.shape7 {
+  max-width: 100%;
+  transition: all 0.3s ease-out 0s;
+}
+
+.shape1 {
+  top: 53%;
+  left: 12%;
+  animation: translate1 3s infinite alternate;
+  -webkit-animation: translate1 3s infinite alternate;
+}
+
+@keyframes translate1 {
+  0% {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+
+.shape2 {
+  top: 20%;
+  left: 32%;
+  animation: translate1 3s infinite alternate;
+  -webkit-animation: translate1 3s infinite alternate;
+}
+
+.shape3 {
+  top: 43%;
+  left: 48%;
+  animation: translate2 3s infinite alternate;
+  -webkit-animation: translate2 3s infinite alternate;
+}
+
+.shape4 {
+  top: 55%;
+  left: 41%;
+  animation: translate2 3s infinite alternate;
+  -webkit-animation: translate2 3s infinite alternate;
+}
+
+@keyframes translate2 {
+  0% {
+    transform: scale(0.2);
+    -webkit-transform: scale(0.2);
+  }
+  100% {
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+  }
+}
+
+.shape5 {
+  top: 22%;
+  left: 60%;
+  animation: translate3 3s infinite alternate;
+  -webkit-animation: translate3 3s infinite alternate;
+}
+
+@keyframes translate3 {
+  0% {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+  }
+  100% {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+  }
+}
+
+.shape6 {
+  top: 38%;
+  left: 86%;
+  animation: translate3 3s infinite alternate;
+  -webkit-animation: translate2 3s infinite alternate;
+}
+
+.shape7 {
+  top: 64%;
+  left: 90%;
+  animation: translate3 3s infinite alternate;
+  -webkit-animation: translate2 3s infinite alternate;
+}
+
+/* #home,
+#about,
+#service,
+#portfolio,
+#contact,
+#news {
+  visibility: none;
+  animation-name: slideInUp;
+}
+
+@keyframes slideInUp {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+} */
+
+.slideInUp {
+  animation: animationname 0.5s linear;
+  transition: 0.5s ease-in-out;
+}
+@keyframes animationname {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translateZ(0);
+  }
+}
