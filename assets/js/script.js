@@ -21,11 +21,33 @@ function isInViewport() {
   }
 }
 
-$(document.body).on('touchmove', onScroll); // for mobile
+function isInViewportMobile() {
+  var bounding = $("#portfolio")[0].getBoundingClientRect();
+  // -404.15380859375 0 414 654.84619140625
+  if (
+    bounding.top >= -404 
+  ) {
+    console.log("In the viewport! :)");
+    return true;
+  } else {
+    console.log("Not in the viewport. :(");
+    return false;
+  }
+}
+
+$(document.body).on('touchmove', onTouchMove); // for mobile
 $(window).on('scroll', onScroll); 
 
 function onScroll () {
   if (isInViewport()) {
+    countAnimation("counter1", 12000);
+    countAnimation("counter2", 2);
+    countAnimation("counter3", 1);
+  }
+}
+
+function onTouchMove () {
+  if (isInViewportMobile()) {
     countAnimation("counter1", 12000);
     countAnimation("counter2", 2);
     countAnimation("counter3", 1);
