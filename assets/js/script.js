@@ -42,7 +42,7 @@ $(window).on('scroll', onScroll);
 
 function onScroll () {
   if (isInViewport()) {
-    countAnimation("counter1", 12000);
+    countAnimation("counter1", 12);
     countAnimation("counter2", 2);
     countAnimation("counter3", 1);
   }
