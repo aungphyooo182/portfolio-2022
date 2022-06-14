@@ -60,6 +60,9 @@
   .shape-area {
     display: none;
   }
+  .hero-image{
+    margin-top: 0.5rem;
+  }
   .about-image {
     transform: scale(1);
     object-fit: cover;
@@ -72,5 +75,17 @@
   .portfolio-grid {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 32px;
+  }
+  .counter-group span:first-of-type {
+    min-width: auto;
+  }
+  #typed{
+    font-size: 30px;
+  }
+  .icon-item{
+    margin-bottom: 0.5rem;
+  }
+  #home h1{
+    font-size: 30px;
   }
 }
