@@ -21,13 +21,16 @@ function isInViewport() {
   }
 }
 
-$(window).scroll(function () {
+$(document.body).on('touchmove', onScroll); // for mobile
+$(window).on('scroll', onScroll); 
+
+function onScroll () {
   if (isInViewport()) {
     countAnimation("counter1", 12000);
     countAnimation("counter2", 2);
     countAnimation("counter3", 1);
   }
-});
+}
 
 function countAnimation(element, end) {
   let counts = setInterval(updated);
