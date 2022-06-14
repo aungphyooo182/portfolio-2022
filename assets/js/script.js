@@ -41,7 +41,7 @@ $(document.body).on('touchmove', onTouchMove); // for mobile
 $(window).on('scroll', onScroll); 
 
 function onScroll () {
-  if (isInViewport()) {
+  if (isInViewport() && !isCounting) {
     countAnimation("counter1", 12);
     countAnimation("counter2", 2);
     countAnimation("counter3", 1);
@@ -49,7 +49,7 @@ function onScroll () {
 }
 
 function onTouchMove () {
-  if (isInViewportMobile()) {
+  if (isInViewportMobile() && !isCounting) {
     countAnimation("counter1", 12);
     countAnimation("counter2", 2);
     countAnimation("counter3", 1);
@@ -66,6 +66,7 @@ function countAnimation(element, end) {
       clearInterval(counts);
     }
   }
+  isCounting = true;
 }
 
 
