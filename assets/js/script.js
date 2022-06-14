@@ -23,9 +23,9 @@ function isInViewport() {
 
 $(window).scroll(function () {
   if (isInViewport()) {
-    countAnimation("counter1", 100);
-    countAnimation("counter2", 200);
-    countAnimation("counter3", 300);
+    countAnimation("counter1", 12000);
+    countAnimation("counter2", 2);
+    countAnimation("counter3", 1);
   }
 });
 
@@ -40,3 +40,10 @@ function countAnimation(element, end) {
     }
   }
 }
+
+
+function submitForm(event){
+  console.log(event)
+}
+
+

@@ -43,11 +43,14 @@
               <li>
                 <a href="#contact">contact</a>
               </li>
-              <li>
+              <li style="display: none;">
                 <a href="#news">news</a>
               </li>
             </ul>
-            <button class="btn-hire-me">Hire Me</button>
+            <button class="btn-hire-me">
+              <a href="https://www.linkedin.com/in/aung-phyo-oo-527115154/"> Hire Me</a>
+             
+            </button>
           </div>
           <div class="ham" id="ham">
             <i class="fa fa-bars" aria-hidden="true"></i>
@@ -70,7 +73,7 @@
             <li>
               <a href="#contact">contact</a>
             </li>
-            <li>
+            <li style="display: none;">
               <a href="#news">news</a>
             </li>
           </ul>
@@ -128,11 +131,11 @@
                 </p>
                 <div class="d-flex align-items-center">
                   <div class="social-icon">
-                    <a href="#" class="btn-hire-me">Hire Me</a>
-                    <a href="#" class="circle">
+                    <a href="https://www.linkedin.com/in/aung-phyo-oo-527115154/" class="btn-hire-me">Hire Me</a>
+                    <a href="https://www.facebook.com/khunnu.phyo" class="circle">
                       <i class="fa-brands fa-facebook-f"></i
                     ></a>
-                    <a href="#" class="circle"
+                    <a href="https://www.linkedin.com/in/aung-phyo-oo-527115154/" class="circle"
                       ><i class="fa-brands fa-linkedin-in"></i
                     ></a>
                   </div>
@@ -141,7 +144,7 @@
             </div>
             <div class="col-xl-5 col-lg-5 col-md-5">
               <div class="hero-image">
-                <img src="./assets/images/work-man.png" alt="" class="w-100" />
+                <img src="./assets/images/apo.jpg" alt="" class="w-100" />
               </div>
             </div>
           </div>
@@ -155,7 +158,7 @@
           </div>
           <div class="row">
             <div class="col-xl-5 col-lg-4">
-              <img src="./assets/images/exp.png" class="about-image" alt="" />
+              <img src="./assets/images/apoexp.png" class="about-image" alt="" />
             </div>
             <div class="col-xl-7 col-lg-8 text-align-left">
               <h1>I’m Aung Phyo Oo</h1>
@@ -192,7 +195,7 @@
               </div>
               <div class="btn-group">
                 <a href="#" class="btn-hire-me">Download CV</a>
-                <a href="#" class="btn-hire-me">Hire me</a>
+                <a href="https://www.linkedin.com/in/aung-phyo-oo-527115154/" class="btn-hire-me">Hire me</a>
               </div>
             </div>
           </div>
@@ -247,49 +250,25 @@
           </div>
           <div class="portfolio-grid">
             <div class="portfolio-item">
-              <img src="./assets/images/portfolio1.png" alt="">
-              <a href="#">Web design</a>
+              <img src="./assets/images/calculator.png" alt="">
+              <a href="https://github.com/aungphyooo182/react_calculator">Simple Calculator</a>
             </div>
             <div class="portfolio-item">
-              <img src="./assets/images/portfolio2.png" alt="">
-              <a href="#">Web design</a>
-            </div>
-            <div class="portfolio-item">
-              <img src="./assets/images/portfolio3.png" alt="">
-              <a href="#">Web design</a>
-            </div>
-            <div class="portfolio-item">
-              <img src="./assets/images/portfolio4.png" alt="">
-              <a href="#">Web design</a>
-            </div>
-            <div class="portfolio-item">
-              <img src="./assets/images/portfolio5.png" alt="">
-              <a href="#">Web design</a>
-            </div>
-            <div class="portfolio-item">
-              <img src="./assets/images/portfolio6.png" alt="">
-              <a href="#">Web design</a>
-            </div>
-            <div class="portfolio-item">
-              <img src="./assets/images/portfolio7.png" alt="">
-              <a href="#">Web design</a>
-            </div>
-            <div class="portfolio-item">
-              <img src="./assets/images/portfolio8.png" alt="">
-              <a href="#">Web design</a>
+              <img src="./assets/images/bookish.png" alt="">
+              <a href="https://github.com/aungphyooo182/bookish">Bookish</a>
             </div>
           </div>
-          <div class="counter-group d-flex justify-content-between">
+          <div class="counter-group d-flex justify-content-between mt-5">
             <div class="counter-item d-flex flex-column">
-              <span id="counter1"></span>
+              <span id="counter1">100</span>
               <span>Working Hours</span>
             </div>
             <div class="counter-item d-flex flex-column">
-              <span id="counter2"></span>
+              <span id="counter2">200</span>
               <span>Total Projects</span>
             </div>
             <div class="counter-item d-flex flex-column">
-              <span id="counter3"></span>
+              <span id="counter3">300</span>
               <span>Feedbacks</span>
             </div>
           </div>
@@ -302,12 +281,12 @@
           <img src="./assets/images/wave.png" alt="" />
         </div>
         <div class="contact-form">
-          <form action="" id="contact-form">
+          <form action="mailto:aungphyooo182@gmail.com" method="post" enctype="text/plain" >
             <input type="text" name="name" id="name" placeholder="Name:">
             <input type="text" name="email" id="email" placeholder="Email:">
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Message here:"></textarea>
-          <button type="submit" class="btn-hire-me">Submit</button>
-          </form>
+          <input type="submit" class="btn-hire-me" value="Send Email">
+            </form>
         </div>
       </div>
     </div>
@@ -329,6 +308,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./assets/js/script.js"></script>
+    </script>
     <script>
       var typed = new Typed("#typed", {
         strings: ["Aung Phyo Oo", "Front-end Developer", "Freelancer"],
