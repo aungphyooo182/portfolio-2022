@@ -102,7 +102,7 @@ html {
 
 .btn-hire-me a {
   text-decoration: none;
-  color: inherit;
+  color: var(--white);
 }
 
 .btn-hire-me:hover {
