@@ -3,6 +3,8 @@ $("#ham").on("click", function () {
   document.getElementById("mobile-links").classList.toggle("show");
 });
 
+var isCounting = false;
+
 function isInViewport() {
   var bounding = $("#portfolio")[0].getBoundingClientRect();
   if (
@@ -48,7 +50,7 @@ function onScroll () {
 
 function onTouchMove () {
   if (isInViewportMobile()) {
-    countAnimation("counter1", 12000);
+    countAnimation("counter1", 12);
     countAnimation("counter2", 2);
     countAnimation("counter3", 1);
   }
