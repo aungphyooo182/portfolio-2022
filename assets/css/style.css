@@ -393,14 +393,37 @@ form {
   align-items: center;
 }
 
-.secion-title a {
+.section-title a {
   text-decoration: none;
   color: inherit;
 }
 
-.secion-title a:hover,
-.secion-title a:active,
-.secion-title a:visited {
+.section-title a:hover,
+.section-title a:active,
+.section-title a:visited {
   text-decoration: none;
-  color: inherit;secion-title.
+  color: inherit;
+}
+.work-project {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-project-item {
+  /* display: flex;
+  align-items: baseline; */
+  margin-bottom: 2rem;
+}
+
+.work-project-item ul {
+  margin-inline-start: 2rem !important;
+}
+
+.work-project-item h3 {
+  width: max-content;
+  margin-right: 1rem;
+}
+
+.work-project-item img:hover {
+  transform: scale(1.01);
 }
