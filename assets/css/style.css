@@ -415,7 +415,7 @@ form {
   margin-bottom: 2rem;
 }
 
-.work-project-item ul {
+.work-project-item > ul {
   margin-inline-start: 2rem !important;
 }
 
