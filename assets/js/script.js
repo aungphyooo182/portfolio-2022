@@ -35,8 +35,8 @@ function isInViewportMobile() {
   }
 }
 
-$(document.body).on("touchmove", onTouchMove); // for mobile
-$(window).on("scroll", onScroll);
+// $(document.body).on("touchmove", onTouchMove); // for mobile
+// $(window).on("scroll", onScroll);
 
 function onScroll() {
   if (isInViewport() && !isCounting) {
